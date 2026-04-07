@@ -146,8 +146,8 @@ body::before {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to top, rgba(10,10,9,0.95) 30%, rgba(10,10,9,0.4) 70%, rgba(10,10,9,0.2) 100%),
-    linear-gradient(to right, rgba(10,10,9,0.6) 0%, transparent 60%);
+    linear-gradient(to top, rgba(10,10,9,0.92) 25%, rgba(10,10,9,0.25) 60%, rgba(10,10,9,0.1) 100%),
+    linear-gradient(to right, rgba(10,10,9,0.5) 0%, transparent 55%);
   z-index: 1;
 }
 
