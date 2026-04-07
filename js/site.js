@@ -139,21 +139,6 @@ document.querySelectorAll('.play-btn').forEach(btn => {
   });
 });
 
-// ── Work item background images ───────────
-document.querySelectorAll('.work-item').forEach(item => {
-  const style = item.getAttribute('style') || '';
-  const match = style.match(/url\(['"]?([^'")\s]+)['"]?\)/);
-  if (match) {
-    const bg = document.createElement('div');
-    bg.className = 'work-item-bg';
-    bg.style.backgroundImage = `url('${match[1]}')`;
-    const overlay = document.createElement('div');
-    overlay.className = 'work-item-overlay';
-    item.prepend(overlay);
-    item.prepend(bg);
-  }
-});
-
 // ── Work grid filter ──────────────────────
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
