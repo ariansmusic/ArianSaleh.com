@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arian Saleh — Composer</title>
+  <meta name="description" content="Arian Saleh is a film, television, and theatre composer based in Brooklyn, NY. Sundance Special Jury Award winner. Emmy Award winner.">
+  <meta property="og:title" content="Arian Saleh — Composer">
+  <meta property="og:description" content="Film, television, and theatre composer. Sundance Special Jury Award 2026. Emmy Award winner.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ariansaleh.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Arian Saleh</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Work</a></li>
+      <li><a href="pages/music.html">Music</a></li>
+      <li><a href="pages/about.html">About</a></li>
+      <li><a href="pages/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="hero-image" data-src="images/hero.jpg"></div>
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Film · Television · Theatre</p>
+      <h1 class="hero-title">
+        Composer.<br>
+        <em>Brooklyn, NY.</em>
+      </h1>
+      <div class="hero-credits">
+        <span class="credit-pill gold">Sundance Special Jury Award 2026</span>
+        <span class="credit-pill">Emmy Award Winner</span>
+        <span class="credit-pill">Tribeca · SXSW · AFI · SIFF</span>
+        <span class="credit-pill">Nimruz Grant 2026</span>
+      </div>
+      <div class="hero-scroll">
+        <div class="hero-scroll-line"></div>
+        <span>Selected work</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Work grid ── -->
+  <section>
+    <div class="section-header">
+      <span class="section-label">Selected work</span>
+      <div class="section-rule"></div>
+      <div class="section-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="film">Film</button>
+        <button class="filter-btn" data-filter="tv">TV</button>
+        <button class="filter-btn" data-filter="theatre">Theatre</button>
+      </div>
+    </div>
+
+    <div class="work-grid">
+
+      <!-- The Friend's House is Here — FEATURED -->
+      <div class="work-item span-2 reveal" data-category="film"
+           style="--bg-image: url('images/projects/friends-house.jpg')">
+        <div class="work-item-inner">
+          <p class="work-tag gold">Feature film · 2026</p>
+          <p class="work-title">The Friend's House is Here</p>
+          <p class="work-meta">
+            U.S. Documentary Competition<br>
+            Sundance Film Festival 2026
+          </p>
+          <p class="work-award">Special Jury Award Winner</p>
+          <div class="play-row">
+            <button class="play-btn" data-src="audio/friends-house-excerpt.mp3" aria-label="Play score excerpt">
+              <svg viewBox="0 0 10 12"><polygon points="0,0 10,6 0,12"/></svg>
+            </button>
+            <span class="play-label">Score excerpt</span>
+            <div class="progress-bar-wrap"><div class="progress-bar-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Am I Roxie? -->
+      <div class="work-item reveal" data-category="theatre"
+           style="--bg-image: url('images/projects/roxie.jpg')">
+        <div class="work-item-inner">
+          <p class="work-tag">Theatre · 2024</p>
+          <p class="work-title">Am I Roxie?</p>
+          <p class="work-meta">
+            Geffen Playhouse<br>
+            Los Angeles
+          </p>
+          <div class="play-row">
+            <button class="play-btn" data-src="audio/roxie-excerpt.mp3" aria-label="Play score excerpt">
+              <svg viewBox="0 0 10 12"><polygon points="0,0 10,6 0,12"/></svg>
+            </button>
+            <span class="play-label">Score excerpt</span>
+            <div class="progress-bar-wrap"><div class="progress-bar-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blackfeet Boxing -->
+      <div class="work-item reveal" data-category="tv"
+           style="--bg-image: url('images/projects/blackfeet.jpg')">
+        <div class="work-item-inner">
+          <p class="work-tag">Documentary · 2022</p>
+          <p class="work-title">Blackfeet Boxing: Not Invisible</p>
+          <p class="work-meta">ESPN Films</p>
+          <p class="work-award">Sports Emmy Winner</p>
+          <div class="play-row">
+            <button class="play-btn" data-src="audio/blackfeet-excerpt.mp3" aria-label="Play score excerpt">
+              <svg viewBox="0 0 10 12"><polygon points="0,0 10,6 0,12"/></svg>
+            </button>
+            <span class="play-label">Score excerpt</span>
+            <div class="progress-bar-wrap"><div class="progress-bar-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Girl Icon -->
+      <div class="work-item reveal" data-category="film"
+           style="--bg-image: url('images/projects/girl-icon.jpg')">
+        <div class="work-item-inner">
+          <p class="work-tag">VR Film · 2019</p>
+          <p class="work-title">Girl Icon</p>
+          <p class="work-meta">
+            Malala Fund<br>
+            SXSW Premiere · Forbes Top 50 VR Experiences
+          </p>
+          <div class="play-row">
+            <button class="play-btn" data-src="audio/girl-icon-excerpt.mp3" aria-label="Play score excerpt">
+              <svg viewBox="0 0 10 12"><polygon points="0,0 10,6 0,12"/></svg>
+            </button>
+            <span class="play-label">Score excerpt</span>
+            <div class="progress-bar-wrap"><div class="progress-bar-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Only These Beautiful Moments -->
+      <div class="work-item upcoming reveal" data-category="theatre">
+        <div class="work-item-inner">
+          <p class="work-tag gold">Musical · In development</p>
+          <p class="work-title">Only These Beautiful Moments</p>
+          <p class="work-meta">
+            Original musical based on the Stonewall &amp;<br>
+            Lambda Award winning novel by Abdi Nazemian
+          </p>
+          <p class="work-award">Nimruz Grant Recipient 2026</p>
+          <p class="work-status">In development</p>
+        </div>
+      </div>
+
+      <!-- The Moment -->
+      <div class="work-item reveal" data-category="film"
+           style="--bg-image: url('images/projects/the-moment.jpg')">
+        <div class="work-item-inner">
+          <p class="work-tag">Documentary · 2025</p>
+          <p class="work-title">The Moment</p>
+          <p class="work-meta">Now streaming on Tubi</p>
+          <div class="play-row">
+            <button class="play-btn" data-src="audio/the-moment-excerpt.mp3" aria-label="Play score excerpt">
+              <svg viewBox="0 0 10 12"><polygon points="0,0 10,6 0,12"/></svg>
+            </button>
+            <span class="play-label">Score excerpt · 18 tracks</span>
+            <div class="progress-bar-wrap"><div class="progress-bar-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dream On -->
+      <div class="work-item reveal" data-category="film"
+           style="--bg-image: url('images/projects/dream-on.jpg')">
+        <div class="work-item-inner">
+          <p class="work-tag">Documentary · 2023</p>
+          <p class="work-title">Dream On</p>
+          <p class="work-meta">
+            Tribeca Film Festival<br>
+            <em>Emmy ballot — Outstanding Music Composition</em>
+          </p>
+          <div class="play-row">
+            <button class="play-btn" data-src="audio/dream-on-excerpt.mp3" aria-label="Play score excerpt">
+              <svg viewBox="0 0 10 12"><polygon points="0,0 10,6 0,12"/></svg>
+            </button>
+            <span class="play-label">Score excerpt</span>
+            <div class="progress-bar-wrap"><div class="progress-bar-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Revenge Porn -->
+      <div class="work-item reveal" data-category="film"
+           style="--bg-image: url('images/projects/revenge-porn.jpg')">
+        <div class="work-item-inner">
+          <p class="work-tag">Documentary · 2022</p>
+          <p class="work-title">Revenge Porn</p>
+          <p class="work-meta">SXSW · AFI</p>
+          <div class="play-row">
+            <button class="play-btn" data-src="audio/revenge-porn-excerpt.mp3" aria-label="Play score excerpt">
+              <svg viewBox="0 0 10 12"><polygon points="0,0 10,6 0,12"/></svg>
+            </button>
+            <span class="play-label">Score excerpt</span>
+            <div class="progress-bar-wrap"><div class="progress-bar-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- All Sorts -->
+      <div class="work-item reveal" data-category="film"
+           style="--bg-image: url('images/projects/all-sorts.jpg')">
+        <div class="work-item-inner">
+          <p class="work-tag">Feature film · 2021</p>
+          <p class="work-title">All Sorts</p>
+          <p class="work-meta">SIFF</p>
+          <div class="play-row">
+            <button class="play-btn" data-src="audio/all-sorts-excerpt.mp3" aria-label="Play score excerpt">
+              <svg viewBox="0 0 10 12"><polygon points="0,0 10,6 0,12"/></svg>
+            </button>
+            <span class="play-label">Score excerpt</span>
+            <div class="progress-bar-wrap"><div class="progress-bar-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Identity triptych ── -->
+  <section class="triptych">
+
+    <div class="triptych-panel reveal">
+      <p class="triptych-label">Recording Artist</p>
+      <h2 class="triptych-title">Four albums.<br>IMA nominated.<br>World charts #1.</h2>
+      <p class="triptych-body">
+        Gypsy, tango, electronic and Middle Eastern traditions
+        woven into chamber pop. A troubadour tradition with
+        a heavy emphasis on lyric and melody.
+      </p>
+      <a href="pages/music.html" class="triptych-link">Discography</a>
+    </div>
+
+    <div class="triptych-panel reveal">
+      <p class="triptych-label">About</p>
+      <h2 class="triptych-title">Iranian-American.<br>Brooklyn.<br>Composer & artist.</h2>
+      <p class="triptych-body">
+        Known for emotive compositions at the intersection
+        of global sounds. Available for film, television,
+        theatre, and new media.
+      </p>
+      <a href="pages/about.html" class="triptych-link">Biography</a>
+    </div>
+
+    <div class="triptych-panel libretto reveal">
+      <p class="triptych-label">The Libretto Project</p>
+      <h2 class="triptych-title">A secret<br>back door.<br>Enter if you know.</h2>
+      <p class="triptych-body">
+        An ongoing personal project.<br>For the curious.
+      </p>
+      <a href="https://www.thelibrettoproject.com" target="_blank" rel="noopener" class="triptych-link">thelibrettoproject.com</a>
+    </div>
+
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <span class="footer-logo">Arian Saleh</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Work</a></li>
+      <li><a href="pages/music.html">Music</a></li>
+      <li><a href="pages/about.html">About</a></li>
+      <li><a href="pages/contact.html">Contact</a></li>
+      <li><a href="https://www.thelibrettoproject.com" target="_blank" rel="noopener">Libretto</a></li>
+    </ul>
+    <span class="footer-right">Brooklyn, NY &nbsp;·&nbsp; Available for projects</span>
+  </footer>
+
+  <script src="js/site.js"></script>
+</body>
+</html>
