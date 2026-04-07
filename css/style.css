@@ -335,10 +335,10 @@ body::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: var(--bg-image, var(--bg-3));
+  background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
-  opacity: 0;
+  opacity: 0.15;
   transition: opacity 0.5s var(--ease);
   z-index: 0;
 }
@@ -347,16 +347,11 @@ body::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(10,10,9,0.95) 40%, rgba(10,10,9,0.7) 100%);
+  background: linear-gradient(to top, rgba(10,10,9,0.97) 40%, rgba(10,10,9,0.7) 100%);
   z-index: 1;
-  opacity: 0;
-  transition: opacity 0.5s var(--ease);
 }
 
-.work-item:hover::before,
-.work-item:hover::after {
-  opacity: 1;
-}
+.work-item:hover::before { opacity: 0.35; }
 
 .work-item:hover { background: var(--bg-3); }
 
