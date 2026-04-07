@@ -331,11 +331,9 @@ body::before {
 
 .work-item:nth-child(3n) { border-right: none; }
 
-.work-item::before {
-  content: '';
+.work-item-bg {
   position: absolute;
   inset: 0;
-  background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
   opacity: 0.15;
@@ -343,15 +341,14 @@ body::before {
   z-index: 0;
 }
 
-.work-item::after {
-  content: '';
+.work-item-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, rgba(10,10,9,0.97) 40%, rgba(10,10,9,0.7) 100%);
   z-index: 1;
 }
 
-.work-item:hover::before { opacity: 0.35; }
+.work-item:hover .work-item-bg { opacity: 0.4; }
 
 .work-item:hover { background: var(--bg-3); }
 
