@@ -139,6 +139,17 @@ document.querySelectorAll('.play-btn').forEach(btn => {
   });
 });
 
+// ── Work item background images ───────────
+document.querySelectorAll('.work-item[style]').forEach(item => {
+  const match = item.getAttribute('style').match(/url\(['"]?([^'")\s]+)['"]?\)/);
+  if (match) {
+    const img = item.querySelector('.work-item-inner');
+    item.style.setProperty('--bg-image', `url('${match[1]}')`);
+    // Force repaint
+    item.classList.add('has-image');
+  }
+});
+
 // ── Work grid filter ──────────────────────
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
